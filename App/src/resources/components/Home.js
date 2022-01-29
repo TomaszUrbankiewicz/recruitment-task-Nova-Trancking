@@ -1,9 +1,12 @@
 import React from 'react';
+import Header from './Header';
+import Slider from './Slider';
 
 const Home = () => {
     return (
         <main>
-            <h1>Witryna strony</h1>
+            <Header/>
+            <Slider/>
         </main>
     )
 }
