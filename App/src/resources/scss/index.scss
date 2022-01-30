@@ -1,5 +1,14 @@
+body{
+    background-color: #f2f3f4fa;
+    height: 100%;
+    main{
+        height: 100%;
+    }
+}
+
 @import "reset";
 @import "grid";
 
 @import "./elements/hader";
 @import "./elements/slider";
+@import "./elements/form";

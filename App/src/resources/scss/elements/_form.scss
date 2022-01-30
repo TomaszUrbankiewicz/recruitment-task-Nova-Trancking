@@ -1,0 +1,181 @@
+form{
+    position: absolute;
+    left: 200px;
+    top: 200px;
+    z-index: 2;
+    width: 83%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    .columns_form{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: space-around;
+
+        .box_columns{
+            width: 15%;
+            height: 100%;
+            padding-top: 20px;
+            
+            .box_input{
+                display: flex;
+                margin-bottom: 35px;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                input{
+                    width: 100%;
+                    padding: 3px;
+                    margin-top: 4px;
+                    border: none;
+                    background-color: #f2f4f5ff;
+                    font-size: 12px;
+                }
+                label{
+                    color:#c5c7cbff;
+                    font-size: 12px;
+                }
+                select{
+                    width: 100%;
+                    margin-top: 6px;
+                    padding: 3px;
+                    border: none;
+                    background-color: #f2f4f5ff;
+                    font-size: 12px;
+                }
+                .label{
+                    width: 280%;
+                    min-width: 280%;
+                }
+            }
+            .box_input2{
+                display: flex;
+                .box_input{
+                    &:last-child{
+                        margin-left: 20px;
+                    }
+                }
+            }
+            
+        }
+        .columns_2{
+            width: 25%;
+            .box_input2{
+                .box_input_big{
+                    width: 60%;
+                }
+                .box_input_small{
+                    width: 40%;
+                }
+            }
+            .box_input2_smal{
+                width: 57%;
+            }
+        }
+        .columns_3{
+            
+            .box_input2_smal{
+                width: 50%;
+            }
+        }
+        .columns_4{
+            .box_input2_smal{
+                width: 50%;
+            }
+            button{
+                border: solid 1px rgb(194, 190, 190);
+                margin-top: 5px;
+                padding: 5px;
+                background-color: white;
+                font-size: 12px;
+            }
+        }
+
+    }
+    .table_form{
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 50px;
+        button{
+            border: none;
+            background-color: white;
+            color:#669cd5ff;
+            margin-right: 60px;
+            margin-bottom: 20px;
+        }
+        p{
+            color:#6e7070ff ;
+            font-size: 12px;
+            padding-left: 5px;
+        }
+
+        .box_table{
+            width: 100%;
+            margin-top: 20px;
+            font-size: 12px;
+            @media(min-width:1400px){
+                font-size: 14px;
+            };
+            @media(min-width:1600px){
+                font-size: 16px;
+            };
+                .thead{
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    padding-left: 5%;
+                    margin-bottom: 15px;
+                    .th_1{
+                        padding-right: 6%;
+                    }
+                    .th_2{
+                        padding-right: 2.5%;
+                    }.th_3{
+                        padding-right: 1%;
+                    }.th_4{
+                        padding-right: 6.5%;
+                    }.th_5{
+                        padding-right: 6.5%;
+                    }.th_6{
+                        padding-right: 3%;
+                    }.th_7{
+                        padding-right: 3.5%;
+                    }.th_8{
+                        padding-right: 5.5%;
+                    }
+                    
+                }
+                .thead_backg{
+                    background-color: #f2f4f5ff; 
+                    .th_1{
+                        padding-right: 3%;
+                    }
+                    .th_2{
+                        padding-right: 11%;
+                    }.th_3{
+                        padding-right: 4%;
+                    }.th_4{
+                        padding-right: 3%;
+                    }.th_5{
+                        padding-right: 3%;
+                    }.th_6{
+                        padding-right: 3%;
+                    }.th_7{
+                        padding-right: 3%;
+                    }.th_8{
+                        padding-right: 3%;
+                    }
+                    .th_7{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: flex-start;
+                        padding-right: 3%;
+                    }
+                }
+        }
+    }
+}

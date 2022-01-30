@@ -14,8 +14,11 @@ html {
     width: 180px;
     min-width: 100px;
     background-color: white;
-    height: 94vh;
+    height: 170vh;
     overflow-y: scroll;
+    @media(min-width:1400px){
+        height: 120%;
+    };
     .box_el_slider{
         padding-top: 30px;
         width: 100%;

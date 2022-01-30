@@ -15,12 +15,11 @@ const Menu = (props) => {
                 <div className='empty_box'></div>
                 <div className='index'>
                 <img className="arrow_img" src={foto_1} alt="save"/>
-                <span>NN/0044T/TR</span>
+                <span>{props.index_props}</span>
                 </div>
                 <ul>
                     {array_li.map((el, key) => {
                         return(
-                            
                             <li key={key} id={key+1} onClick={add_activ_border} className={(activ_border == (key+1)) ? "activ_border" : ""} >{el}</li>
                         )
                     })}

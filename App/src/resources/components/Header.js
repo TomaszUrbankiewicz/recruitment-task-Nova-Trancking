@@ -3,7 +3,7 @@ import Nav from './elements_header/Nav';
 import Menu from './elements_header/Menu';
 
 
-const Header = () => {
+const Header = (props) => {
 
     const array_li =[ ["Orders","Documents","Complaints","Finanses","Invoices","Messages","Routes"],
                 ["Tablica ","Tablica ","Tablica","Tablica "],
@@ -20,7 +20,7 @@ const change_number_array = (el) => {
     return (
         <header>
             <Nav change_number_array={change_number_array}/>
-            <Menu array_li={array_li[number_array]}/>
+            <Menu array_li={array_li[number_array]} index_props={props.index}/>
         </header>
     )
 }
