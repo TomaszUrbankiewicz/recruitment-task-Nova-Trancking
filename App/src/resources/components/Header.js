@@ -20,7 +20,7 @@ const change_number_array = (el) => {
     return (
         <header>
             <Nav change_number_array={change_number_array}/>
-            <Menu array_li={array_li[number_array]} index_props={props.index}/>
+            <Menu array_li={array_li[number_array]} index_props={props.index} save_localStorage={props.save_localStorage}/>
         </header>
     )
 }

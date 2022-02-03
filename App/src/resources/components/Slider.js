@@ -26,7 +26,7 @@ const Slider = (props) => {
                             </div>
                             <div className='box_img'>
                                 <img className="boxes_img" src={foto} alt="save" />
-                                <span  >{el.pole3}</span>
+                                <span >{el.pole3}</span>
                             </div>
                         </div>
                     )

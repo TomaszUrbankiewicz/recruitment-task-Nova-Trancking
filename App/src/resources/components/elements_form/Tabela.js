@@ -25,9 +25,9 @@ const Tabela = () => {
                     <div className='th_8'><span>Kurs NETTO</span></div>
                     <div className='th_9'><span>KURS brutto</span></div>
                 </div>
-                    {array_table.map((el) => {
+                    {array_table.map((el, key) => {
                         return (
-                            <div className='thead'>
+                            <div key={key} className='thead'>
                             <div className='th_1'><span>{el[0]}</span></div>
                             <div className='th_2'><span>{el[1]}</span></div>
                             <div className='th_3'><span>{el[2]}</span></div>

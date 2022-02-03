@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from "react";
+import React, { useState} from "react";
 import foto_1 from '../../img/left-arrow.png';
 import foto_2 from '../../img/save.png';
 
@@ -28,7 +28,7 @@ const Menu = (props) => {
             <div className='menu__box_buttons'>
                 <button>Stworz szablon</button>
                 <button className='second_button'>Wystaw fakture</button>
-                <button className='save_button'><img className="save_img" src={foto_2} alt="save"/> Zapisz</button>
+                <button onClick={props.save_localStorage} className='save_button'><img className="save_img" src={foto_2} alt="save"/> Zapisz</button>
             </div>
         </div>
     )
